@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MY PORTFOLIO </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop_nav">
+        <header>
+	        <h2 class="logo">Sheetal Pathak</h2>
+	        <nav class="navigation">
+	            <a href="#about">About</a>
+		        <a href="#portfolio">Projects</a>
+		        <a href="#">Certifications</a>
+		        <a href="#">Contact</a>
+			    
+	        </nav>
+	    </header>
+	    <div class="row">
+	        <div class="imagee">
+	            <img src="C:\Users\anu\OneDrive\Pictures\profile.jpg"/>
+	        </div>
+	        <div class="text">
+		        <p class="p1">Hello, I am</p>
+		        <h1 class="title">Sheetal Pathak</h1>
+		        <p class="p2">Web Developer|Student</p>
+		        <div class="btn">
+		        <button class="btnn">Download CV</button>
+	        </div>
+	    </div>
+	</nav>
+	<nav id="hamburger_nav">
+	    <h2 class="logo">Sheetal Pathak</h2>
+	    <div class="hamburger_menu">
+		    <div class="hamburger_icon" onclick="toggleMenu()">
+			    <span></span>
+                <span></span>
+                <span></span>				
+			</div>
+			<div class="menulinks">
+			   <li><a href="#" onclick="toggleMenu()">About</a></li>
+		       <li><a href="#" onclick="toggleMenu()">Experience</a></li>
+		       <li><a href="#" onclick="toggleMenu()">Projects</a></li>
+		       <li><a href="#" onclick="toggleMenu()">Contact</a></li>
+			</div>
+		</div>
+	</nav>
+ <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pfp.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Currently A Sophomore student in the esteemed Bachelor of Science (B.Sc) program, specializing
+                        in Web Designing at Acharya Narendra Dev College,University of Delhi.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C++ ,Python, Data Visualisation, Data Analysis</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>Digital Marketing</span><br>SEO, Content Marketing, Social Media Marketing</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Assisted in Cms in an e-commerce website.</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2027</span><br>Graduation in B.Sc(Physical Science with computer science) </li>
+                            <li><span>2023</span><br>Passed Class XII, Shivbrat Singh Children Academy</li>
+                            <li><span>2021</span><br>Passed Class X, Ashok Smarak</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\anu\OneDrive\Bureau\PROJECT FULL STACK\Personal-portfolio\New\images\todo.jpg">
+                    <div class="layer">
+                        <h3>Todo-list Project</h3>
+                        <p>A simple todo-list project based on HTML,CSS and JS.</p>
+                        
+                        <a href="https://github.com/anuucodes/Simple_calculator_project"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\anu\OneDrive\Bureau\PROJECT FULL STACK\Personal-portfolio\New\images\calcul.jpg">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        <p>A Simple calculator using HTML,CSS and JS.</p>
+                        
+                        <a href="https://github.com/sheetalpathakk/calculator"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\anu\OneDrive\Bureau\PROJECT FULL STACK\Personal-portfolio\New\images\gal.jpg">
+                    <div class="layer">
+                        <h3>Color code generator</h3>
+                        <p>Its a color code generator web app where you can simply generate color hexcode and use it in styling your project.</p>
+                        <a href="https://github.com/sheetalpathakk/color_code_gen"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btnnnn">See More</a>
+        </div>
+    </div>
+</body>
